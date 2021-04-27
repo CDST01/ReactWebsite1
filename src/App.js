@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header title="React Website" logo={Logo} navigation={Nav} />
+      <Content />
     <Footer/>
     </div>
   );

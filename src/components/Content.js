@@ -1,7 +1,7 @@
 import {Switch,Route} from 'react-router-dom'
 import {Home} from '../components/Home'
 import {About} from '../components/About'
-import {Contact} from './components/Contact'
+import {Contact} from '../components/Contact'
 
 export function Content (props) {
 return (
