@@ -11,6 +11,10 @@ const BannerStyle = {
 }
 
 export function Home( props ) {
+   props.items().then( (articles) => {
+      console.log(articles)
+   })
+   
    return(
       <main className="home">
    <Banner text="Welcome" style={BannerStyle} />
