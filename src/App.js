@@ -9,6 +9,7 @@ import Logo from './car-crash-solid.png'
 
 const Nav= [
 {"link" : "/", "name" : "Home"},
+{"link": "/cakes", "name": "Cakes"},
 {"link" : "/about","name" : "About"},
 {"link" : "/contact", "name": "Contact"}
 ]

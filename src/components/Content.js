@@ -2,6 +2,7 @@ import {Switch,Route} from 'react-router-dom'
 import {Home} from '../components/Home'
 import {About} from '../components/About'
 import {Contact} from '../components/Contact'
+import {Cakes} from './Cakes'
 // firebase
 import firebase from 'firebase/app'
 import 'firebase/firestore'
@@ -43,6 +44,9 @@ return (
             </Route>
             <Route path="/contact">
                 <Contact />
+                </Route>
+                <Route path="/cakes">
+                    <Cakes/>
             </Route>
             <Route path="/">
                <Home items={getArticles} />  
