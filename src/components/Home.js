@@ -17,16 +17,16 @@ const [articles, setArticles]= useState([])
    
    
    
-   useEffect( () => {
-      if( articles.length === 0) {
-         props.items().then( (data) => {
-            setArticles (data)
-         })
-      }
-   })
-   props.items().then( (articles) => {
-      console.log(articles)
-   })
+   // useEffect( () => {
+   //    if( articles.length === 0) {
+   //       props.items().then( (data) => {
+   //          setArticles (data)
+   //       })
+   //    }
+   // })
+   // props.items().then( (articles) => {
+   //    console.log(articles)
+   // })
 
    const ArticleView = (props) => {
       return(
@@ -37,25 +37,25 @@ const [articles, setArticles]= useState([])
             )
    }
    
-const ArticlesList = (props) => {
-   if(articles) {
-      const Collection = articles.map( (article) => {
-         return <ArticleView article={article} />
-      }) 
-   return Collection
-   }
-   else {
-      return( <p>Sorry no Articles!</p>)
-   }
+// const ArticlesList = (props) => {
+//    if(articles) {
+//       const Collection = articles.map( (article) => {
+//          return <ArticleView article={article} />
+//       }) 
+//    return Collection
+//    }
+//    else {
+//       return( <p>Sorry no Articles!</p>)
+//    }
 
-}
+// }
 
 
    return(
       <main className="home">
    <Banner text="Welcome" style={BannerStyle} />
    <h1>Home</h1>
-   <ArticlesList/>
+   {/* <ArticlesList/> */}
    </main> 
 
    )
